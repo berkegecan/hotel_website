@@ -1,0 +1,354 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+}
+
+.container{  
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+li{
+  list-style: none;
+}
+
+h2{
+  font-size: 3rem;
+  padding-bottom: 2%;
+}
+
+span{
+  color: #f7c08a;
+}
+
+.btn{
+  padding: 15px;
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+.btn:hover{
+  background-color: #f7c08a;
+  color: #444;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background-color: #f7c08a;
+  color: #333;
+}
+
+.l-heading{
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+.main-navbar{
+  background-color: #333;
+}
+
+.main-navbar a{  
+  padding: 0.6rem;
+  color: #fff;
+}
+
+.navbar-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list li{
+  display: inline-block;
+}
+
+.list li a:hover{
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.logo{
+  font-size: 2rem;
+  padding:0;
+}
+
+/* Showcase */
+.showcase{
+  background:url('../img/showcase.jpg') no-repeat center center/cover;
+}
+
+.showcase-info{
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.showcase-info p{
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+
+/* Home Info */
+.home-info{
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.home-flex{
+  display: flex;
+  align-items: center;
+}
+/*
+.home-flex .img{
+  /*background: url(/img/photo-1.jpg) no-repeat center center/cover;
+  background-image: url(/img/photo-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: %;
+  width: 50%;
+}*/
+
+.home-img{
+  flex-basis: 50%;
+}
+
+.home-img img{
+  display: block;
+  max-width: 100%;
+}
+
+.home-flex .flex-text{
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.home-flex .flex-text h3{
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+
+.home-flex .flex-text p{
+  font-size: 1.3rem;
+  padding-bottom: 5%;
+}
+
+/* Features */
+.features{
+  background-color: #fff;
+}
+
+.features-flex{
+  display: flex;
+  text-align: center;
+}
+
+.features-flex .box{
+  flex: 1;
+  padding: 50px;
+}
+
+.features-flex h3{
+  padding-bottom: 20px;
+}
+
+/* Footer */
+.main-footer{
+  background-color: #333;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.main-footer p{
+  padding: 30px 0;
+}
+
+/* About */
+.about-flex{
+  display: flex;
+}
+
+.about-flex .info-left{
+  flex-basis: 50%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.about-flex .info-left p{
+  padding-bottom: 1rem;
+}
+
+.about-flex .info-right{
+  flex-basis: 40%;
+  padding: 5% 0 5% 10%;
+}
+
+.about-flex .info-right img{
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Testimonials */
+#testimonials{
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+#testimonials h2{
+  padding-top: 3%;
+}
+
+.testimonial{
+  display: flex;
+  margin: 5% 0;
+  padding: 2%;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.testimonial img{
+  display: block;  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 4%;
+}
+
+/* Contact */
+#contact-form{
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+#contact-form p{
+  padding-bottom: 1rem;
+}
+
+.form-group{
+  padding-bottom: 1rem;
+}
+
+.form-group label{
+  display: block;
+}
+
+.form-group input,
+.form-group textarea{
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.form-group input{
+  height: 2rem;
+}
+
+.form-group textarea{
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.buton{
+  width: 100%;
+  text-align: center;
+}
+
+.buton button{
+  width: 25%;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-info{
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+.flex-contact{
+  display: flex;
+  text-align: center;
+}
+
+.flex-contact .box{
+  flex: 1;
+  padding: 50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  /* Navbar */
+  .navbar-wrapper{
+    display: block;
+    text-align: center;
+  }
+
+  .list{
+    display: block;
+    width: 100%;
+  }
+
+  .list li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+  }
+
+  /* Showcase */
+  .showcase-info{
+    padding-top: 5%;
+  }
+
+  /* Home İnfo*/
+  .home-flex{
+    flex-direction: column;
+  }
+
+  .home-flex .img{
+    width: 100%;
+  }
+  
+  .home-flex .flex-text{
+    width: 100%;
+    padding: 10px 0 35px 0;
+  }
+
+  /* Features */
+  .features-flex{
+    display: block;
+  }
+
+  /* About */
+  .about-flex{
+    display: block;  
+  }
+  
+  .about-flex .info-right{
+    padding: 10%;
+  }
+
+  /* Contact */
+  .flex-contact{
+    display: block;
+  }
+}
